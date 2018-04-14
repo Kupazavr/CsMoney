@@ -53,7 +53,7 @@ def parser(botnumber, proxy):
 
 def web():
     # Потом вмотрирую телегу
-    # token = '417167184:AAGKeX24-8gvzI9ZGOUUsZ9lcZ46Oq_6Fwo'
+    # token = '$$'
     # bot = telebot.TeleBot(token)
 
     driver = webdriver.Chrome()
