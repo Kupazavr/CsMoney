@@ -305,7 +305,7 @@ def opskinslistings():
             classidpricetradelist.clear()
             print(payload)
             a = requests.post('https://api.opskins.com/ISales/ListItems/v1/',
-                              data={'items': json.dumps(payload), "key": "12c5525e2d3bfcd0b7241fdee228aa"})
+                              data={'items': json.dumps(payload), "key": "$$$"})
             print(a.text)
         except:
             continue
