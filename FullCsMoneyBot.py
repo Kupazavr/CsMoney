@@ -238,9 +238,9 @@ def web():
 # Трейд
 def tradeautorize():
     time.sleep(40)
-    steam_client = SteamClient('F7C162A70D570C47A7BE89CDE6C7ADA8')
+    steam_client = SteamClient('#')
     print('ok1')
-    steam_client.login('koprozavr', 'Ghjcnjnfr12345', 'D:\CsMoney\Steamguard.txt')
+    steam_client.login('k#', '#', 'D:\CsMoney\Steamguard.txt')
     print('logged')
     while True:
         try:
