@@ -71,8 +71,8 @@ def web():
         i2 = 0
         while i2 == 0:
             try:
-                driver.find_element(By.XPATH, '//*[@id="steamAccountName"]').send_keys('koprozavr')
-                driver.find_element(By.XPATH, '//*[@id="steamPassword"]').send_keys('Ghjcnjnfr12345')
+                driver.find_element(By.XPATH, '//*[@id="steamAccountName"]').send_keys('#')
+                driver.find_element(By.XPATH, '//*[@id="steamPassword"]').send_keys('#')
                 driver.find_element(By.XPATH, '//*[@id="imageLogin"]').click()
                 i2 += 1
             except Exception:
@@ -81,9 +81,9 @@ def web():
     autorize()
 
     def auth():
-        firstauth = steam.webauth.MobileWebAuth('koprozavr', 'Ghjcnjnfr12345')
+        firstauth = steam.webauth.MobileWebAuth('#', '#')
         secauth = steam.guard.SteamAuthenticator(
-            {"shared_secret": "cPy2hkAUgdWUJW/+1mKT0OZtqOY=", "identity_secret": "n96/dM+qWs6P8JrfOTtUhP0/qKg="},
+            {"shared_secret": "#", "identity_secret": "#"},
             medium=firstauth)
         finishauth = secauth.get_code(time.time())
         q1 = 0
