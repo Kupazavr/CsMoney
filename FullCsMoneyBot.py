@@ -317,7 +317,7 @@ def opskinslistings():
 
 
 if __name__ == '__main__':
-    th1 = Process(target=parser, args=(r'D:\CsMoney\Bts\1.txt', {'https': '188.166.173.172:3128'}))
+    th1 = Process(target=parser, args=(r'D:\CsMoney\Bots\1.txt', {'https': '188.166.173.172:3128'}))
     th1.start()
     time.sleep(0.1)
     th2 = Process(target=parser, args=(r'D:\CsMoney\Bots\2.txt', {'https': '188.166.145.12:3128'}))
